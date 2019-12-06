@@ -1,0 +1,30 @@
+{
+  "name": "fe-prompt",
+  "version": "1.0.0",
+  "description": "This is the homework assignment given to prospective frontend engineers. This task should not take more than 4 hours of your time. This prompt itself should last 3.5 hours, with half an hour to fill out the remaining questions on this README.",
+  "main": "index.js",
+  "dependencies": {
+    "material-design-icons": "^3.0.1",
+    "node": "^13.3.0"
+  },
+  "devDependencies": {
+    "node-sass": "^4.13.0",
+    "nodemon": "^2.0.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "./bin/build-css",
+    "watch-css": "./bin/watch-css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/annelisam/fe-prompt.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/annelisam/fe-prompt/issues"
+  },
+  "homepage": "https://github.com/annelisam/fe-prompt#readme"
+}
