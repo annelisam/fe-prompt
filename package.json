@@ -1,30 +1,39 @@
 {
   "name": "fe-prompt",
-  "version": "1.0.0",
-  "description": "This is the homework assignment given to prospective frontend engineers. This task should not take more than 4 hours of your time. This prompt itself should last 3.5 hours, with half an hour to fill out the remaining questions on this README.",
-  "main": "index.js",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
-    "material-design-icons": "^3.0.1",
-    "node": "^13.3.0"
-  },
-  "devDependencies": {
-    "node-sass": "^4.13.0",
-    "nodemon": "^2.0.1"
+    "@material-ui/core": "^4.7.1",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "contentful": "^7.10.0",
+    "nodemon": "^2.0.1",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-scripts": "3.3.0",
+    "sass-loader": "^8.0.0",
+    "typescript": "^3.7.3"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build-css": "./bin/build-css",
-    "watch-css": "./bin/watch-css"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/annelisam/fe-prompt.git"
+  "eslintConfig": {
+    "extends": "react-app"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/annelisam/fe-prompt/issues"
-  },
-  "homepage": "https://github.com/annelisam/fe-prompt#readme"
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
 }
