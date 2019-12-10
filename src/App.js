@@ -1,11 +1,10 @@
 import React from 'react';
-import './App.css';
-import MainTing from './components/MainTing';
+import ResponsiveDrawer from './components/Responsivedrawer';
 
 function App() {
   return (
     <div>
-    <MainTing />
+      <ResponsiveDrawer />
     </div>
   );
 }
