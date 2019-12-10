@@ -27,7 +27,7 @@ import ChevronRightRoundedIcon from '@material-ui/icons/ChevronRightRounded';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles, useTheme } from '@material-ui/core/styles';
 
-const drawerWidth = 300;
+const drawerWidth = 250;
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -74,7 +74,7 @@ const useStyles = makeStyles(theme => ({
   },
   listStyles: {
       color: '#95ABC8',
-      fontSize: '1em'
+      fontSize: '0.7em',
   },
   content: {
     flexGrow: 1,
@@ -102,14 +102,14 @@ function ResponsiveDrawer(props) {
       <div className={classes.listStyles}>
       <List>
         {['Calendar', 'Documentation', 'Dashboard'].map((text, index) => (
-          <ListItem button key={text}>
+          <ListItem className={classes.listStyles} button key={text}>
             <ListItemIcon className={classes.listStyles}>
                 {index === 0 && <CalendarTodayRoundedIcon/>}
                 {index === 1 && <DescriptionRoundedIcon/>}
                 {index === 2 && <HomeRoundedIcon/>}
             </ListItemIcon>
             <ListItemText primary={text}/>
-            <ChevronRightRoundedIcon />
+            <ChevronRightRoundedIcon style={{paddingLeft: '7'}} />
           </ListItem>
         ))}
       </List>
@@ -122,7 +122,7 @@ function ResponsiveDrawer(props) {
                 {index === 2 && <TableChartRoundedIcon/>}
             </ListItemIcon>
             <ListItemText primary={text} />
-            <ChevronRightRoundedIcon />
+            <ChevronRightRoundedIcon style={{paddingLeft: '7'}} />
           </ListItem>
         ))}
       </List>
@@ -134,7 +134,7 @@ function ResponsiveDrawer(props) {
                 {index === 1 && <ShoppingBasketRoundedIcon/>}
             </ListItemIcon>
             <ListItemText primary={text} />
-            <ChevronRightRoundedIcon />
+            <ChevronRightRoundedIcon style={{paddingLeft: '7'}} />
           </ListItem>
         ))}
       </List>
@@ -148,7 +148,7 @@ function ResponsiveDrawer(props) {
                 {index === 3 && <FileCopyRoundedIcon/>}
             </ListItemIcon>
             <ListItemText primary={text} />
-            <ChevronRightRoundedIcon />
+            <ChevronRightRoundedIcon style={{paddingLeft: '7'}} />
           </ListItem>
         ))}
       </List>

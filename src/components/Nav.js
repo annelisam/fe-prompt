@@ -10,7 +10,7 @@ import Avatar from '@material-ui/core/Avatar';
 import { fade, makeStyles} from '@material-ui/core/styles';
 
 
-const drawerWidth = 300;
+const drawerWidth = 250;
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -29,6 +29,8 @@ const useStyles = makeStyles(theme => ({
       background: '#30b5e0',
       border: 'none',
       boxShadow: 'none',
+      display: 'flex',
+      justifyContent: 'space-between',
     [theme.breakpoints.up('sm')]: {
       width: `calc(100% - ${drawerWidth}px)`,
       marginLeft: drawerWidth,
@@ -107,6 +109,6 @@ export default function Navbar() {
             </IconButton>
         </Toolbar>
       </AppBar>
-    </div>
+      </div>
   );
 }
